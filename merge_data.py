@@ -29,7 +29,7 @@ def merge(master_sheet_filepath, formatted_dpp_filepath):
         "Missing Information", "Zone Uplift", 
         "Overnight", "Shift Uplift", "PM Confirmation", 
         "Corrected SKU", "Completed Date",
-        "Scheduled Date", "Admin Status"
+        "Scheduled Date", "Admin Status", "Notes"
     ]
     ignore_cols_indices = [master_ws[1].index(cell) for cell in master_ws[1] if cell.value in ignore_cols]
 

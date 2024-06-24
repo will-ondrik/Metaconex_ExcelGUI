@@ -45,6 +45,7 @@ def format(raw_dpp_filepath):
     df["Scheduling Notes"] = ''
     df["Missing Information"] = 'No'
     df["Admin Status"] = ''
+    df["Notes"] = ''
 
     # Restructure Column Order
     new_column_order = [
@@ -62,7 +63,7 @@ def format(raw_dpp_filepath):
         "Customer Contact Phone Number", 
         "Customer Contact Email Address",
         "Scheduled Date", "PM Confirmation",
-        "Completed Date"
+        "Completed Date", "Notes"
     ]
 
     # Reorder the DataFrame columns
